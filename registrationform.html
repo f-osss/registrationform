@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registrationform</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1> Sign Up Registration Form</h1>
+
+
+<form action="submission.html" method="POST">
+    <label for="names"> First and Last Name:</label>
+    <br>
+    <input type="text" name="names" id="names" required>
+    <br>
+
+
+    <label for="email">Email Address:</label>
+    <br>
+    <input type="email" name="email" id="email" required>
+    <br>
+
+    <label for="pw"> Password:</label>
+    <br>
+    <input type="password" name="pw" id="pw" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" >
+    <br>
+    <small>Password must contain at least one number, one uppercase letter, one lowercase letter, and one special character</small>
+    <br>
+
+    <p>Select your gender:</p>
+    <br>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">F</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">M</label>
+    <input type="radio" name="gender" id="non-binary" value="non-binary">
+    <label for="non-binary">N</label>
+    <br>
+
+
+    <label for="country">What country are you from:</label>
+    <br>
+    <input type="text" list="listofcountries" id="country" name="country">
+
+    <datalist id="listofcountries">
+        <option value="Canada"></option>
+        <option value="USA"></option>
+        <option value="UK"></option>
+        <option value="Spain"></option>
+        <option value="Germany"></option>
+        <option value="Nigeria"></option>
+    </datalist>
+
+    <p>Select your interests:</p>
+    <br>
+    <input type="checkbox" id="biking" name="biking" value="Biking">
+    <label for="biking">Biking</label>
+    <input type="checkbox" id="reading" name="reading" value="Reading">
+    <label for="reading">Reading</label>
+    <input type="checkbox" id="baking" name="baking" value="Baking">
+    <label for="baking">Baking</label>
+
+
+    <br><input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
