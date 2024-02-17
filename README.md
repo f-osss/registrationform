@@ -1,2 +1,2 @@
 # registrationform
-first project on github
+first project on github which shows a registration form written in HTML
