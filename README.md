@@ -1,2 +1,3 @@
 # registrationform
-first project on github which shows a registration form written in HTML
+### About my first project on github.
+ It is a simple registration form written in HTML
