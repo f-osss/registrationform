@@ -21,9 +21,9 @@ label {
     margin-bottom: 5px;
 }
 
-h1{
+h1 {
     padding-left: 40px;
-    color:green;
+    color: green;
 }
 
 input[type="text"],
@@ -56,6 +56,7 @@ input[type="radio"]:checked + label {
     background-color: black;
     color: #fff;
 }
+
 input[type="submit"] {
     background-color: #4caf50;
     color: white;
@@ -72,4 +73,9 @@ input[type="submit"]:hover {
 
 small {
     color: #888;
+}
+
+#int {
+    display: flex;
+    gap: 5px;
 }

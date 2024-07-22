@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>registrationform</title>
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <h1> Sign Up Registration Form</h1>
@@ -23,9 +23,11 @@
 
     <label for="pw"> Password:</label>
     <br>
-    <input type="password" name="pw" id="pw" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" >
+    <input type="password" name="pw" id="pw" required minlength="8"
+           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}">
     <br>
-    <small>Password must contain at least one number, one uppercase letter, one lowercase letter, and one special character</small>
+    <small>Password must contain at least one number, one uppercase letter, one lowercase letter, and one special
+        character</small>
     <br>
 
     <p>Select your gender:</p>
@@ -53,13 +55,14 @@
     </datalist>
 
     <p>Select your interests:</p>
-    <div></div>
-    <input type="checkbox" id="biking" name="biking" value="Biking">
-    <label for="biking">Biking</label>
-    <input type="checkbox" id="reading" name="reading" value="Reading">
-    <label for="reading">Reading</label>
-    <input type="checkbox" id="baking" name="baking" value="Baking">
-    <label for="baking">Baking</label>
+    <div id="int">
+        <input type="checkbox" id="biking" name="biking" value="Biking">
+        <label for="biking">Biking</label>
+        <input type="checkbox" id="reading" name="reading" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="baking" name="baking" value="Baking">
+        <label for="baking">Baking</label>
+    </div>
 
 
     <br><input type="submit" value="Submit">
